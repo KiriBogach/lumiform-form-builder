@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+button {
+  outline: none;
+}
+
+span {
+  color: #A3A3A3;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+div#app {
+  background-color: #F9F9F8;
+}
+
+h2.page_title {
+  color: #7C7C7C;
+  font-family: 'Nunito', sans-serif;
+}
+
+h3.section_title {
+  color: #7C7C7C;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+li:not(:first-child) {
+  border-top: 1px solid #E8E8E8;
+}
+
+li.section {
+  border-top: 1px solid #E8E8E8;
+}
+
+.mdi-pound {
+  border-radius: 100%;
+  border: solid;
+  padding: 2px;
+  background-color: #F5DEFE;
+  color: #CC66F3 !important;
+  margin-right: 15px;
+}
+
+.mdi-format-text {
+  border-radius: 100%;
+  border: solid;
+  padding: 2px;
+  background-color: #CFEFFF;
+  color: #7DD2FF !important;
+  margin-right: 15px;
+}
+
+.mdi-alert-circle {
+  border-radius: 100%;
+  border: solid;
+  padding: 2px;
+  background-color: #c71c1c;
+  color: #ff5064 !important;
+  margin-right: 15px;
+}
+
+.v-input {
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: #F9F9F8;
+}
+
+.v-input.response-type {
+  max-width: 12rem;
+  margin-top: 0 !important;
+}
+
+
+.v-input.v-input--hide-details.theme--dark.v-text-field.v-text-field--is-booted.v-file-input {
+  background: none;
+  max-width: 65px;
+  margin-top: 10px;
+}
