@@ -1,0 +1,7 @@
+version: '3.3'
+
+services:
+    node:
+        image: node:14
+        volumes:
+            - .:/srv/app

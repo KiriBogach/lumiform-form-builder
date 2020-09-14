@@ -13,6 +13,13 @@ yarn serve
 yarn build
 ```
 
+### Docker install
+```
+docker-compose run node /bin/bash
+npm install
+npm run prod
+```
+
 
 # Form Builder VUE SPA
 
