@@ -48,11 +48,10 @@
   </v-app-bar>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
+<script>
 import { mapActions, mapState } from "vuex";
 
-export default Vue.extend({
+export default {
   name: "AppBar",
   computed: {
     ...mapState({
@@ -66,7 +65,7 @@ export default Vue.extend({
       resetForm: "resetForm"
     }),
 
-    downloadJSONFile(text: BlobPart, name: string) {
+    downloadJSONFile(text, name) {
       const a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob([text], { type: "text/json" }));
       a.download = name;
@@ -92,7 +91,5 @@ export default Vue.extend({
       this.downloadJSONFile(formattedJSON, `form-${nowString}.json`);
     }
   }
-});
+};
 </script>
-
-<style scoped></style>

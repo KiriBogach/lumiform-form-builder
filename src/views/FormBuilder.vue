@@ -15,14 +15,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
+<script>
 import Page from "@/components/Page";
 import { mapActions, mapState } from "vuex";
 
 import AddPageButton from "@/components/AddPageButton";
 
-export default Vue.extend({
+export default {
   name: "FormBuilder",
   components: { AddPageButton, Page },
   computed: {
@@ -31,5 +30,5 @@ export default Vue.extend({
   methods: {
     ...mapActions({ setForm: "setForm" })
   }
-});
+};
 </script>
